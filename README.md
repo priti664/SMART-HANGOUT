@@ -43,7 +43,6 @@ The platform allows users to:
 By combining budget filters, category search, and AI assistance, the platform helps students plan hangouts quickly and easily.
 
 Example queries users can ask:
-
 Cafe under 300
 Restaurant under 500
 Best malls near Goregaon
