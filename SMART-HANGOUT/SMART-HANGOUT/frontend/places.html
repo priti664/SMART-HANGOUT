@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Places - SMART HANGOUT FINDER</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SMART HANGOUT FINDER</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="search.html">Search</a>
+            <a href="places.html">Places</a>
+            <a href="chatbot.html">AI Chat</a>
+            <button id="loginBtn">Login</button>
+            <button id="registerBtn">Register</button>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 id="placesTitle">All Hangout Places in Mumbai</h2>
+            <div id="placesContainer">
+                <!-- Places will be loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SMART HANGOUT FINDER PRESENTED BY TECHIE'S.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email" required list="emailSuggestions">
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required list="emailSuggestions">
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Place Details Modal -->
+    <div id="placeDetailsModal" class="modal">
+        <div class="modal-content place-details-content">
+            <span class="close">&times;</span>
+            <div id="placeDetailsContent">
+                <!-- Place details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Email suggestions datalist -->
+    <datalist id="emailSuggestions">
+        <option value="@gmail.com">
+        <option value="@yahoo.com">
+        <option value="@hotmail.com">
+        <option value="@outlook.com">
+        <option value="@icloud.com">
+        <option value="@aol.com">
+    </datalist>
+
+    <script>
+        // Load places on page load and support category hash filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const hash = window.location.hash.replace('#', '').toLowerCase();
+            const title = document.getElementById('placesTitle');
+            let allPlaces = [];
+
+            if (hash && placesData[hash]) {
+                title.textContent = `Showing: ${hash.charAt(0).toUpperCase() + hash.slice(1)}`;
+                allPlaces = placesData[hash];
+            } else {
+                Object.keys(placesData).forEach(cat => {
+                    allPlaces.push(...placesData[cat]);
+                });
+                title.textContent = 'All Hangout Places in Mumbai';
+            }
+
+            displayPlaces(allPlaces);
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer Details - SMART HANGOUT FINDER</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SMART HANGOUT FINDER</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="search.html">Search</a>
+            <a href="places.html">Places</a>
+            <a href="chatbot.html">AI Chat</a>
+            <button id="loginBtn">Login</button>
+            <button id="registerBtn">Register</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="offerRoot" class="offer-root">
+            <!-- Offer details will load here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SMART HANGOUT FINDER PRESENTED BY TECHIE'S.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email" required list="emailSuggestions">
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required list="emailSuggestions">
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Email suggestions datalist -->
+    <datalist id="emailSuggestions">
+        <option value="@gmail.com">
+        <option value="@yahoo.com">
+        <option value="@hotmail.com">
+        <option value="@outlook.com">
+        <option value="@icloud.com">
+        <option value="@aol.com">
+    </datalist>
+
+    <script src="script.js"></script>
+</body>
+</html>
