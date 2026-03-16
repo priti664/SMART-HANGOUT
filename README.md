@@ -16,7 +16,7 @@ AI chat assistant
 
 Student-friendly recommendations
 
-❗ Problem Statement
+❗ Problem Statement:
 College students often want to hang out with friends but struggle to find affordable places within their limited budget.
 
 Some major problems include:
@@ -31,7 +31,7 @@ Because of this, students miss good affordable places and local businesses lose 
 
 There is a need for a simple and smart platform that helps students quickly find hangout spots within their budget.
 
-💡 Solution
+💡 Solution:
 Smart Hangout Finder provides a simple and intelligent platform where students can discover hangout places based on their budget and preferred category.
 
 The platform allows users to:
