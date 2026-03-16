@@ -1,59 +1,58 @@
- 
-Presented by Team Techie's
+🚀 SMART HANGOUT FINDER
+📍 Presented by Team Techie's
+💡 Smart Hangout Finder is a web-based platform designed to help college students discover affordable hangout spots such as cafés, restaurants, malls, and other places based on their budget and preferences.
 
-Smart Hangout Finder is a web-based platform designed to help college students discover affordable hangout spots such as cafés, restaurants, malls, and other places like parks based on their budget and preferences.
+This project was developed as a Hackathon MVP to solve the common problem of students struggling to find budget-friendly hangout places nearby.
 
-The project provides AI-assisted recommendations, category-based filtering, and budget-friendly discovery, making it easier for students to plan outings without spending too much time searching.
+The platform includes features like:
 
-This platform is designed as a Hackathon MVP that solves the problem of finding budget-friendly hangout locations quickly and efficiently.
+Budget-based search
 
-The website includes multiple pages such as Home, Search, Places, and AI Chat Assistant, allowing users to explore different hangout options across Mumbai.
+Category filtering
+
+AI chat assistant
+
+Student-friendly recommendations
 
 ❗ Problem Statement
+College students often want to hang out with friends but struggle to find affordable places within their limited budget.
 
-College students often want to spend time with friends at cafés, restaurants, malls, or entertainment venues, but they face several challenges when trying to find affordable places.
+Some major problems include:
 
-Some of the major problems include:
+Difficulty finding budget-friendly cafés and restaurants
 
-Difficulty finding hangout spots within a limited student budget
+Most platforms focus on expensive places instead of student budgets
 
-Most discovery platforms focus on expensive places rather than budget-friendly options
+Students waste time searching across multiple apps.
 
-Students waste time searching through multiple apps to compare prices and locations
+Because of this, students miss good affordable places and local businesses lose potential customers.
 
-Because of these issues, students miss out on good budget-friendly places, and small businesses lose potential customers.
-
-There is a need for a simple, student-focused platform that helps users quickly discover affordable hangout spots nearby.
+There is a need for a simple and smart platform that helps students quickly find hangout spots within their budget.
 
 💡 Solution
+Smart Hangout Finder provides a simple and intelligent platform where students can discover hangout places based on their budget and preferred category.
 
-Smart Hangout Finder provides a simple and intelligent web platform that allows students to find hangout places based on their budget and preferred category.
+The platform allows users to:
+✔ Search hangout spots within their budget
+✔ Filter places by category (Cafe, Restaurant, Mall, etc.)
+✔ Get recommendations through an AI assistant
+✔ Discover student-friendly places nearby
 
-The system enables users to:
+By combining budget filters, category search, and AI assistance, the platform helps students plan hangouts quickly and easily.
 
-Search for hangout spots within a specific budget range
-
-Filter places by category such as cafés, restaurants, malls, or entertainment
-
-Get quick suggestions through an AI-powered chat assistant
-
-Discover popular student-friendly places in Mumbai
-
-By combining budget filtering, category search, and an AI assistant, the platform helps students plan hangouts faster and more efficiently.
-
-The AI assistant can respond to queries like:
+Example queries users can ask:
 
 Cafe under 300
-Restaurants near Andheri
-Best malls in Mumbai
+Restaurant under 500
+Best malls near Goregaon
 ⭐ Key Features
 💰 Budget-Based Hangout Search
 
-Users can easily find places within their budget range, making it perfect for students planning affordable outings.
+Users can search for places within their budget range, helping students plan affordable outings.
 
 📂 Category-Based Filtering
 
-Users can filter places by categories such as:
+Users can filter places by categories like:
 
 ☕ Cafes
 
@@ -63,17 +62,17 @@ Users can filter places by categories such as:
 
 🛍 Malls
 
-🎮 Other Hangout Spots
+🎮 Other Hangout Places
 
 🤖 AI Chat Assistant
 
-The platform includes an AI chatbot that helps users quickly discover places by asking natural questions.
+The platform includes an AI chatbot that helps users quickly find hangout spots by asking questions.
 
-Example queries:
+Example:
 
 Cafe under ₹300
 Restaurant under ₹500
-Best malls near Goregaon
+Best malls near Andheri
 📍 Mumbai-Based Recommendations
 
 The platform focuses on popular hangout areas in Mumbai, including:
@@ -90,11 +89,4 @@ Borivali
 
 ⚡ Simple and Attractive Interface
 
-The website uses a clean UI with modern design elements, making it easy and fast for students to search and explore hangout spots.
-
-
-Demo video section
-
-Team credits
-
-That version will make your GitHub project look like a professional hackathon submission.
+The website provides a clean, fast, and user-friendly interface so students can easily discover places without confusion.
