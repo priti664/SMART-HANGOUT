@@ -1,0 +1,9 @@
+const itemImages = {
+    coffee: 'https://images.unsplash.com/...',
+    latte: 'https://images.unsplash.com/...',
+    smoothies: 'https://images.unsplash.com/...',
+    bagels: 'https://images.unsplash.com/...',
+    salads: 'https://images.unsplash.com/...',
+    pizza: 'https://images.unsplash.com/...',
+    // ... aur 20+ items
+};

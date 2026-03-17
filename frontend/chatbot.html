@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Assistant - SMART HANGOUT FINDER</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SMART HANGOUT FINDER</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="search.html">Search</a>
+            <a href="places.html">Places</a>
+            <a href="chatbot.html">AI Chat</a>
+            <button id="loginBtn">Login</button>
+            <button id="registerBtn">Register</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="chatbotSection">
+            <h2>AI Assistant for Mumbai Hangouts</h2>
+            <p>Ask me anything about hangout places, recommendations, budgets, or locations in Mumbai!</p>
+            <div id="chatContainer">
+                <div id="chatMessages">
+                    <div class="message bot-message">
+                        Hello! I'm your AI assistant. I can help you find the best hangout spots in Mumbai. What are you looking for?<br><br>
+                        <strong>Quick suggestions:</strong>
+                    </div>
+                    <div class="quick-suggestions">
+                        <button class="suggestion-btn" onclick="sendQuickMessage('cafe')">☕ Cafes</button>
+                        <button class="suggestion-btn" onclick="sendQuickMessage('restaurant')">🍽️ Restaurants</button>
+                        <button class="suggestion-btn" onclick="sendQuickMessage('mall')">🛍️ Malls</button>
+                        <button class="suggestion-btn" onclick="sendQuickMessage('budget')">💰 Budget Options</button>
+                        <button class="suggestion-btn" onclick="sendQuickMessage('andheri')">📍 Andheri</button>
+                        <button class="suggestion-btn" onclick="sendQuickMessage('offers')">🎉 Special Offers</button>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 10px; margin-top: 15px;">
+                    <input type="text" id="chatInput" placeholder="Ask me about cafes, restaurants, malls, budget, location...">
+                    <button id="sendBtn">Send</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SMART HANGOUT FINDER PRESENTED BY TECHIE'S.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email" required list="emailSuggestions">
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required list="emailSuggestions">
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Email suggestions datalist -->
+    <datalist id="emailSuggestions">
+        <option value="@gmail.com">
+        <option value="@yahoo.com">
+        <option value="@hotmail.com">
+        <option value="@outlook.com">
+        <option value="@icloud.com">
+        <option value="@aol.com">
+    </datalist>
+
+    <script src="script.js"></script>
+</body>
+</html>
